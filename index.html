@@ -9,27 +9,28 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="text-center"><img src="https://i.postimg.cc/KY5G2BBW/move-along-nothing-to-see-here.jpg" class="img-fluid" alt="Move Along, Nothing to See Here"></h2>
-    <p>
-      <audio id="backgroundAudio" loop>
-        <source src="https://www.quackit.com/music/good_enough.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </p>
-    <p class="text-center"><a href="http://tdbnz.email">Private Email Domain - tdbnz.email</a></p>
+    <div class="text-center">
+      <h2><img src="https://i.postimg.cc/KY5G2BBW/move-along-nothing-to-see-here.jpg" class="img-fluid" alt="Move Along, Nothing to See Here"></h2>
+      <p><a href="http://tdbnz.email">Private Email Domain - tdbnz.email</a></p>
+    </div>
   </div>
+
+  <audio id="backgroundAudio" autoplay loop>
+    <source src="https://www.quackit.com/music/good_enough.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
   <script>
-    // Delayed autoplay function
-    function delayedPlay() {
-      var audio = document.getElementById('backgroundAudio');
-      audio.play();
-    }
-    // Call delayedPlay function after a short delay
-    setTimeout(delayedPlay, 1000);
+    // Get the audio element
+    var audio = document.getElementById('backgroundAudio');
+
+    // Play the audio
+    audio.play();
   </script>
 </body>
 </html>
